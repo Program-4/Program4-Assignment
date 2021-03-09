@@ -4,7 +4,7 @@
 class SudokuFactory : public PuzzleFactory
 {
 public:
-	Puzzle createPuzzle(Puzzle) override;
+	Puzzle* createPuzzle(Puzzle&) override;
 private:
 	SudokuOffspring mutate;
 };

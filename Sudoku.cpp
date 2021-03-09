@@ -1,5 +1,5 @@
 #include "Sudoku.h"
-#include "sudokuFitness.h"
+#include "SudokuFitness.h"
 
 Sudoku::Sudoku()
 {
@@ -41,7 +41,7 @@ void Sudoku::inputHelper(string input)
 		}
 	}
 	fitnessScore = fitness.howFit(*this);
-	cout << fitnessScore;
+	cout << fitnessScore << endl;
 }
 string Sudoku::outputHelper()
 {

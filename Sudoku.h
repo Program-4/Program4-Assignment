@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "puzzle.h"
+#include "Puzzle.h"
 #include "SudokuFitness.h"
 #include "string"
 class Sudoku : public Puzzle

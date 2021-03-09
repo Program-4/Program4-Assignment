@@ -3,12 +3,30 @@
 
 #include <iostream>
 #include <cstdlib>
-#include"sudoku.h"
-#include "sudokuFitness.h"
+#include"Sudoku.h"
+#include "SudokuFitness.h"
+#include "SudokuOffspring.h"
+#include "SudokuFactory.h"
+
 using namespace std;
+
 int main()
 {
     Sudoku s1;
     cin >> s1;
     cout << s1;
+
+    SudokuFactory test;
+
+    cout << "\n";
+    cout << "Filling up 0's" << endl;
+    test.createPuzzle(s1);
+    cout << s1 << endl;
+
+    cout << "\n";
+    cout << "New Puzzle being made" << endl;
+
+    test.createPuzzle(s1);
+
+    cout << s1 << endl;
 }

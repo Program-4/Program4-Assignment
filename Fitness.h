@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "puzzle.h"
+#include "Puzzle.h"
 using namespace std;
 class Fitness
 {
